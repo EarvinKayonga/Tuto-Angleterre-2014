@@ -1,0 +1,17 @@
+
+public class Rectangle implements Shape {
+
+	public double height, width;
+	public Rectangle(double h, double w) {
+		if (h>0 && w>0) {
+			height=h;
+			width=w;
+		}
+	}
+
+	@Override
+	public double area() {
+		return height*width;
+	}
+
+}
